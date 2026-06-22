@@ -1,3 +1,40 @@
+# ----------------------------------------------------
+# 1. Site Metadata
+# ----------------------------------------------------
+title: "Lunatic"
+description: "Ada/SPARK based Lua 5.5 Application server"
+url: "https://lunatic.terron.nz"
+baseurl: ""
+
+author:
+  name: "Terror"
+  email: "good.luck@"
+
+# ----------------------------------------------------
+# 2. Build & Remote Theme Settings
+# ----------------------------------------------------
+remote_theme: ab/jekyll-theme-tufte    # Fetches the Tufte theme from GitHub
+
 plugins:
-  - jekyll-remote-theme
-remote_theme: tufte
+  - jekyll-remote-theme                # Required plugin to pull remote themes
+  - jekyll-feed                        # Generates your RSS feed
+  - jekyll-seo-tag                     # Automatically handles SEO meta tags
+
+# ----------------------------------------------------
+# 3. Markdown & Rendering Engine
+# ----------------------------------------------------
+markdown: kramdown
+kramdown:
+  input: GFM                           # Enables GitHub Flavored Markdown
+  syntax_highlighter: rouge            # Handles code block styling
+
+# ----------------------------------------------------
+# 4. File Management
+# ----------------------------------------------------
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - .sass-cache/
+  - .jekyll-cache/
