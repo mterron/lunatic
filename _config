@@ -1,11 +1,13 @@
 # ----------------------------------------------------
 # 1. Site Metadata
 # ----------------------------------------------------
-title: "Lunatic"
-description: "Ada/SPARK based Lua 5.5 Application server"
 url: "https://lunatic.terron.nz"
 baseurl: ""
+title: "Lunatic"
+subtitle: "Ada/SPARK based Lua 5.5 Application server"
+description: "Ada/SPARK based Lua 5.5 Application server"
 
+show_author: false
 author:
   name: "Terror"
   email: "good.luck@"
@@ -24,6 +26,8 @@ plugins:
 # 3. Markdown & Rendering Engine
 # ----------------------------------------------------
 markdown: kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+highlighter: rouge
 kramdown:
   input: GFM                           # Enables GitHub Flavored Markdown
   syntax_highlighter: rouge            # Handles code block styling
